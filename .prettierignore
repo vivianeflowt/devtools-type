@@ -1,0 +1,8 @@
+node_modules
+tmp/
+temp/
+docs/
+.history
+*.log
+*.tmp
+

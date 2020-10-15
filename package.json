@@ -1,0 +1,33 @@
+{
+	"name": "devtools-type",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"format": "npx prettier --write .",
+		"test": "jest"
+	},
+	"prettier": {
+		"trailingComma": "es5",
+		"tabWidth": 4,
+		"semi": false,
+		"singleQuote": true
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vivianeflowt/devtools-type.git"
+	},
+	"author": "Viviane Florido <vivianeflowt@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/vivianeflowt/devtools-type/issues"
+	},
+	"homepage": "https://github.com/vivianeflowt/devtools-type#readme",
+	"devDependencies": {
+		"jest": "26.5.3",
+		"prettier": "2.1.2"
+	}
+}
