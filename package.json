@@ -1,11 +1,21 @@
 {
 	"name": "devtools-type",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "tool for developers detect type of value",
 	"main": "index.js",
 	"directories": {
 		"test": "test"
 	},
+	"keywords": [
+		"node",
+		"js",
+		"javascript",
+		"detect",
+		"type",
+		"variable",
+		"value",
+		"type detect"
+	],
 	"scripts": {
 		"format": "npx prettier --write .",
 		"test": "jest"
