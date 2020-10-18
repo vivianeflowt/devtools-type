@@ -2,7 +2,7 @@
  * dev-tools : type
  * Copyright(c) 2020 Viviane Florido.
  * Licensed under the MIT license.
- * Greating to https://github.com/chaijs/type-detect
+ * Thanks to https://github.com/chaijs/type-detect
  */
 
 'use strict'

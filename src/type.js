@@ -1,3 +1,5 @@
+'use strict'
+
 const typedetect = require('./typedetect')
 
 const typeOf = (value) => {
