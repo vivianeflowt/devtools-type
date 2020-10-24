@@ -6,8 +6,8 @@ const isNaN = (value) => {
 
 const valor1 = NaN // NaN
 const valor2 = 1 // Numero
+const valor3 = Infinity // Numero
 
-console.log(type.typeOf(valor1))
+console.log(type.typeOf(valor3))
 
-console.log(type.is.NaN(1))
-console.log(type.isNot.NaN(1))
+console.log(typeof valor3)

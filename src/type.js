@@ -6,6 +6,9 @@ const typeOf = (value) => {
 	if (Number.isNaN(value)) {
 		return 'NaN'
 	}
+	if (value === Infinity) {
+		return 'Infinity'
+	}
 	return typedetect(value).toLowerCase()
 }
 
@@ -13,6 +16,7 @@ const is = {
 	string: (value) => typeOf(value) === 'string',
 	number: (value) => typeOf(value) === 'number',
 	NaN: (value) => typeOf(value) === 'NaN',
+	Infinity: (value) => typeOf(value) === 'Infinity',
 	object: (value) => typeOf(value) === 'object',
 	array: (value) => typeOf(value) === 'array',
 	function: (value) => typeOf(value) === 'function',
@@ -30,6 +34,7 @@ const isNot = {
 	string: (value) => typeOf(value) !== 'string',
 	number: (value) => typeOf(value) !== 'number',
 	NaN: (value) => typeOf(value) !== 'NaN',
+	Infinity: (value) => typeOf(value) !== 'Infinity',
 	object: (value) => typeOf(value) !== 'object',
 	array: (value) => typeOf(value) !== 'array',
 	function: (value) => typeOf(value) !== 'function',

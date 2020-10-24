@@ -34,7 +34,7 @@ test('is not number', () => {
 	assert.strictEqual(type.isNot.number(1.1234), false)
 	assert.strictEqual(type.isNot.number(-1), false)
 	assert.strictEqual(type.isNot.number(-1.1234), false)
-	assert.strictEqual(type.isNot.number(Infinity), false)
+	assert.strictEqual(type.isNot.number(Infinity), true)
 	assert.strictEqual(type.isNot.number(NaN), true)
 	assert.strictEqual(type.isNot.number(new Number(1)), false)
 })
@@ -48,6 +48,16 @@ test('is not NaN', () => {
 	assert.strictEqual(type.isNot.NaN(-1.1234), true)
 	assert.strictEqual(type.isNot.NaN(Infinity), true)
 	assert.strictEqual(type.isNot.NaN(new Number(1)), true)
+})
+
+test('is not Infinity', () => {
+	assert.strictEqual(type.isNot.Infinity(Infinity), false)
+	assert.strictEqual(type.isNot.Infinity(NaN), true)
+	assert.strictEqual(type.isNot.Infinity(1), true)
+	assert.strictEqual(type.isNot.Infinity(1.1234), true)
+	assert.strictEqual(type.isNot.Infinity(-1), true)
+	assert.strictEqual(type.isNot.Infinity(-1.1234), true)
+	assert.strictEqual(type.isNot.Infinity(new Number(1)), true)
 })
 
 test('is not string', () => {
