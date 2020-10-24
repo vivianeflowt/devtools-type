@@ -11,7 +11,7 @@ npm install devtools-type
 With [yarn](https://yarnpkg.com/en/):
 
 ```shell
-yarn add devtools-typé
+yarn add devtools-type
 ```
 
 ### Usage
