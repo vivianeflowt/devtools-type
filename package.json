@@ -1,6 +1,6 @@
 {
 	"name": "devtools-type",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "tool for developers detect type of value",
 	"main": "index.js",
 	"directories": {

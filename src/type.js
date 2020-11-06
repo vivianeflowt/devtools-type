@@ -12,6 +12,8 @@ const typeOf = (value) => {
 	return typedetect(value).toLowerCase()
 }
 
+
+
 const is = {
 	string: (value) => typeOf(value) === 'string',
 	number: (value) => typeOf(value) === 'number',
